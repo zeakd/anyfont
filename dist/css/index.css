@@ -1,0 +1,78 @@
+.button, .upload-button, .build-button {
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  background-color: #4580b1;
+  padding: 0 15px;
+  min-width: 80px;
+  min-height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px; }
+  .button:hover, .upload-button:hover, .build-button:hover {
+    background-color: #37658c; }
+  .button.disabled, .disabled.upload-button, .disabled.build-button, .button[disabled], [disabled].upload-button, [disabled].build-button {
+    cursor: default;
+    background-image: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+    color: #333;
+    background-color: #E6E6E6; }
+
+.header {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: white;
+  border-bottom: 1px solid gray; }
+  .header .left-nav {
+    float: left; }
+  .header .right-nav {
+    float: right; }
+
+.glyph {
+  display: inline-block;
+  cursor: pointer; }
+  .glyph .hover {
+    width: 100%;
+    height: 100%; }
+    .glyph .hover:hover {
+      background-color: rgba(0, 0, 0, 0.5); }
+
+#root {
+  position: relative; }
+
+.layout .container {
+  margin: auto;
+  max-width: 880px; }
+
+.layout .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000; }
+
+.layout .board {
+  position: relative;
+  margin-top: 60px;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 4000; }
+
+.upload-button {
+  position: relative; }
+  .upload-button .upload {
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0); }
