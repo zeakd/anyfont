@@ -21195,7 +21195,12 @@ module.exports = function onFontLoaded(font) {
     glyph = font.glyphs.get(i);
     // console.log(glyph)
     // empty glyph check
-    if (glyph.unicode && glyph.path && glyph.path.commands.length > 0) {
+    if (
+      glyph.unicode >= 44032 && // 가
+      glyph.path &&
+      glyph.path.commands.length > 0
+    ) {
+      console.log(glyph)
       var $glyph = $('<div></div>').addClass('glyph');
       var canv = createGlyphCanvas(glyphCanvasWidth);
       var ctx = canv.getContext('2d')
