@@ -49,11 +49,11 @@
 
 @font-face {
   font-family: 'koverwatch';
-  src: url("/fonts/koverwatch.ttf") format("truetype"); }
+  src: url("/anyfont/fonts/koverwatch.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'hanna';
-  src: url("/fonts/BMHANNA_11yrs.ttf") format("truetype"); }
+  src: url("/anyfont/fonts/BMHANNA_11yrs.ttf") format("truetype"); }
 
 #root {
   position: relative; }
@@ -153,7 +153,6 @@ body.modal-open {
   display: inline-block;
   vertical-align: middle; }
   .test-modal .wrapper textarea {
-    font-family: "koverwatch";
     font-size: 40px;
     box-sizing: border-box;
     width: 100%;
