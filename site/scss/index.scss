@@ -1,0 +1,56 @@
+@import './_modules/button';
+@import './_modules/header';
+@import './_modules/glyph';
+
+$modal-zindex: 6000;
+$header-zindex: 5000;
+$board-zindex: 4000;
+
+#root {
+  position: relative;
+
+}
+
+.layout {
+  .container {
+    margin: auto;
+    max-width: 880px;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $header-zindex;
+  }
+
+  .board {
+    position: relative;
+    margin-top: $header-height;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: $board-zindex;
+  }
+}
+
+.upload-button {
+  @extend .button;
+  position: relative;
+  // overflow: hidden;
+  .upload {
+    height: $button-height;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+.build-button {
+  @extend .button;
+}

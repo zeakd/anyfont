@@ -19,6 +19,7 @@ function browserSyncTask () {
   })
 
   gulp.watch(paths.sass, ['sass']);
+  gulp.watch(`${paths.root}/**/*.js`, ['js']);
   gulp.watch(paths.copy, ['copy']);
   // gulp.watch(`${config.dest}/**/*.html`).on('change', reload);
 }

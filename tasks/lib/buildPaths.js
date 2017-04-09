@@ -9,7 +9,7 @@ buildPaths['root'] = siteRoot;
 const partialPath = [
   `${siteRoot}/**/_*`,
   `${siteRoot}/**/_*/`,
-  `${siteRoot}/**/_*/**/*`  
+  `${siteRoot}/**/_*/**/*`
 ]
 
 
@@ -21,7 +21,7 @@ const htmlPath = [`${siteRoot}/**/*.html`];
 // const partialHtmlPath = [
 //   `${siteRoot}/**/_*.html`,
 //   `${siteRoot}/**/_*/**/*.html`
-// ]  
+// ]
 buildPaths['html'] = htmlPath.concat(excludePath(partialPath));
 
 /* scss task path */
@@ -30,16 +30,20 @@ const sassDest = `${buildPaths.dest}/css`;
 buildPaths['sass'] = sassPath;
 buildPaths['sassDest'] = sassDest;
 
+/* js task path */
+const jsPath = [`${siteRoot}/**/*.js`]
+buildPaths['js'] = jsPath.concat(excludePath(partialPath));
+
 /* copy task path */
 const copyPath = [`${siteRoot}/**/*`];
 buildPaths['copy'] = copyPath.concat(excludePath(partialPath))
                              .concat(excludePath(htmlPath))
                              .concat(excludePath([`${siteRoot}/scss/`]))
-                             .concat(excludePath(sassPath));
+                             .concat(excludePath(sassPath))
+                             .concat(excludePath(jsPath));
 
 /* data task path */
 const dataPath = `${siteRoot}/_data`;
 buildPaths['data'] = dataPath;
 
 module.exports = buildPaths;
-
