@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/build.css">
+    <title>CS Project AnyFont</title>
+  </head>
+  <body>
+    <div id="root" class='layout'>
+      <header class='header'>
+        <div class="container">
+          <div class="left-nav">
+            <button class='download-button'>Download</button>
+            <button class='test-button'>Test</button>
+          </div>
+          <div class="right-nav">
+            <div class="find-character">
+              <input type="text">
+              <img class='icon' src="/images/find-icon.png" alt="">
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="layout container">
+        <div class="board">
+          <img src="/images/Loading_icon.gif" class='loading' alt="">
+        </div>
+      </div>
+    </div>
+    <div class="download-modal">
+      <div class='close'>X</div>
+      <div class="wrapper">
+        <a href="" class="download-otf">OTF Download</a>
+        <a href="" class="download-ttf">TTF Download</a>
+      </div>
+    </div>
+
+    <div class="test-modal">
+      <div class='close'>X</div>
+      <div class="wrapper">
+        <p>Test generated Hangul characters</p>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+      </div>
+    </div>
+
+    <div class="detail-modal">
+      <div class='close'>X</div>
+      <div class="wrapper">
+        <canvas width=500 height=500></canvas>
+      </div>
+    </div>
+    <script src="./build.js"></script>
+  </body>
+</html>
