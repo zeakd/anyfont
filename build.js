@@ -21243,7 +21243,7 @@ $(document).ready(function () {
    */
   var fontname = getParameterByName('fontname');
   var filename = getFilenameByFontname(fontname);
-  var filepath = '/fonts/' + filename + '.ttf';
+  var filepath = 'fonts/' + filename + '.ttf';
 
   opentype.load(filepath, function(err, font) {
     if (err) {
@@ -21262,11 +21262,12 @@ $(document).ready(function () {
 
   if (filename) {
     var $otfDownloadButton = $('.download-otf');
-    $otfDownloadButton.attr("href", '/fonts/' + filename + '.otf')
+    $otfDownloadButton.attr("href", 'fonts/' + filename + '.otf')
     var $ttfDownloadButton = $('.download-ttf');
-    $ttfDownloadButton.attr("href", '/fonts/' + filename + '.ttf')
+    $ttfDownloadButton.attr("href", 'fonts/' + filename + '.ttf')
   }
 
+  $('.test-modal textarea').css('font-family', fontname);
 
   /**
    * download
