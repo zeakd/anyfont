@@ -21171,7 +21171,7 @@ module.exports = function onFontLoaded(font) {
     fontSize = 30,
     x = 0,
     y = fontSize,
-    glyphCanvasWidth = 40;
+    glyphCanvasWidth = 80;
   ;
 
   var count = 0;
@@ -21245,12 +21245,12 @@ $(document).ready(function () {
 
     reader.readAsArrayBuffer(file);
 
-    // for demo
-    var fontname = file.name.replace(/\.[^/.]+$/, "");
-    fontname = fontname.split('-')[0];
-    var $buildButton = $('.build-button');
-    var oldHref = $buildButton.attr('href')
-    $buildButton.attr('href', oldHref + '?fontname=' + fontname);
+    // // for demo
+    // var fontname = file.name.replace(/\.[^/.]+$/, "");
+    // fontname = fontname.split('-')[0];
+    // var $buildButton = $('.build-button');
+    // var oldHref = $buildButton.attr('href')
+    // $buildButton.attr('href', oldHref + '?fontname=' + fontname);
   }
 
   var fontInput = $('#font-input');

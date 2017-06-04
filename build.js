@@ -21184,7 +21184,7 @@ module.exports = function onFontLoaded(font) {
     fontSize = 30,
     x = 0,
     y = fontSize,
-    glyphCanvasWidth = 40;
+    glyphCanvasWidth = 80;
   ;
 
   var count = 0;
@@ -21234,6 +21234,7 @@ function createGlyphCanvas(size) {
 }
 
 },{"jquery":5}],42:[function(require,module,exports){
+
 var $ = require('jquery');
 var opentype = require('opentype.js')
 var onFontLoaded = require('./_modules/onFontLoad');

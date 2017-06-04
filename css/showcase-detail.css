@@ -45,7 +45,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.button, .upload-button, .build-button {
+.button {
   text-decoration: none;
   margin: 0;
   border: 0;
@@ -59,9 +59,9 @@ table {
   text-align: center;
   display: inline-block;
   border-radius: 5px; }
-  .button:hover, .upload-button:hover, .build-button:hover {
+  .button:hover {
     background-color: #37658c; }
-  .button.disabled, .disabled.upload-button, .disabled.build-button, .button[disabled], [disabled].upload-button, [disabled].build-button {
+  .button.disabled, .button[disabled] {
     cursor: default;
     background-image: none;
     opacity: 0.65;
@@ -151,66 +151,13 @@ table {
     background-repeat: no-repeat;
     background-size: 100%; }
 
-#root {
-  position: relative; }
+h2 {
+  font-size: 3.0em;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 20px; }
 
-.upload-button {
-  position: relative; }
-  .upload-button .upload {
-    height: 40px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    cursor: pointer;
-    opacity: 0;
-    filter: alpha(opacity=0); }
-
-.one-three {
-  box-sizing: border-box;
-  float: left;
-  width: 32.5%;
-  margin-left: 1%; }
-  .one-three:first-child {
-    margin-left: 0; }
-
-.content {
-  margin-top: 100px; }
-  .content .card img {
+.fonts {
+  width: 100%; }
+  .fonts img {
     width: 100%; }
-  .content .card h3 {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center; }
-  .content .card p {
-    margin-top: 20px;
-    margin-left: 50px;
-    font-size: 16px; }
-
-.board h3 {
-  font-size: 30px; }
-
-.board p {
-  margin: 1em;
-  line-height: 1.5em; }
-
-.right {
-  float: right; }
-  .right * {
-    margin-left: 10px; }
-  .right:first-child {
-    margin-left: 0; }
-
-.email-input {
-  vertical-align: middle;
-  display: inline-block;
-  height: 30px;
-  line-height: 30px; }
-  .email-input input, .email-input span {
-    font-size: 16px;
-    vertical-align: middle; }
-  .email-input .icon {
-    width: 20px;
-    vertical-align: middle; }
