@@ -1,0 +1,36 @@
+$button-height: 40px;
+$button-default-color: #4580b1;
+
+.button {
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+  &:hover {
+    background-color: darken($button-default-color, 10);
+  }
+  color: white;
+  font-size: 16px;
+  background-color: $button-default-color;
+
+  padding: 0 15px;
+
+  min-width: 80px;
+  min-height: $button-height;
+  line-height: $button-height;
+  text-align: center;
+
+  display: inline-block;
+  border-radius: 5px;
+
+  &.disabled, &[disabled] {
+    cursor: default;
+    background-image: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #333;
+    background-color: #E6E6E6;
+  }
+}

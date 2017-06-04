@@ -1,0 +1,140 @@
+@import './_modules/reset';
+@import './_modules/button';
+@import './_modules/header';
+@import './_modules/glyph';
+@import './_modules/layout';
+@import './_modules/font-card';
+@import './_modules/clearfix';
+
+.download-button {
+  @extend .button;
+
+}
+
+.sub-header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px grey;
+  
+}
+
+.find-character {
+  float: right;
+  vertical-align: middle;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid gray;
+  padding: 0 5px;
+  input {
+    font-size: 16px;
+    border: none;
+    vertical-align: middle;
+    // margin-top: 10px;
+  }
+
+  .icon {
+    width: 20px;
+    vertical-align: middle;
+    // margin-top: 10px;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.7);
+  text-align: center;
+  z-index: $modal-zindex;
+
+  &.is-active {
+    display: block;
+  }
+
+  .close {
+    position: absolute;
+    font-size: 30px;
+    top: 30px;
+    right: 30px;
+    // width: 10px;
+    // height: 10px;
+    color : white;
+    cursor: pointer;
+  }
+  &:before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+  }
+}
+
+.download-modal {
+  @extend .modal;
+
+  .wrapper {
+    @include clearfix;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.download-otf,
+.download-ttf {
+  @extend .button;
+  float:left;
+  clear:left;
+  width: 200px;
+  margin: 5px 0;
+}
+
+.test-modal {
+  @extend .modal;
+  .wrapper {
+    width: 600px;
+    text-align: left;
+    background-color: #aaa;
+    border-radius: 1px;
+    padding: 10px;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    textarea {
+      font-size: 40px;
+      box-sizing: border-box;
+      width: 100%;
+      resize: none;
+    }
+  }
+}
+
+.detail-modal {
+  @extend .modal;
+  .wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    width: 600px;
+    canvas {
+      width: 100%;
+    }
+  }
+}
+
+.detail-glyph {
+
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  // cursor: pointer;
+  // background-size: 640% 1024%;
+  background-size: 1000% 1600%;
+  background-position: -0px -0px;
+  background-repeat: no-repeat;
+}

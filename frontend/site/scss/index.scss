@@ -1,0 +1,103 @@
+@import './_modules/reset';
+@import './_modules/button';
+@import './_modules/header';
+@import './_modules/glyph';
+@import './_modules/layout';
+@import './_modules/font-card';
+
+#root {
+  position: relative;
+
+}
+
+.upload-button {
+  @extend .button;
+  position: relative;
+  // overflow: hidden;
+  .upload {
+    height: $button-height;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+.build-button {
+  @extend .button;
+}
+
+.one-three {
+  box-sizing: border-box;
+  float: left;
+  width: 32.5%;
+  margin-left: 1%;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.content {
+  margin-top: 100px;
+  .card {
+    img {
+      width: 100%;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    p {
+      margin-top: 20px;
+      margin-left: 50px;
+      font-size: 16px;
+    }
+  }
+}
+
+.board {
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    margin : 1em;
+    line-height: 1.5em;
+  }
+}
+
+.right {
+  float: right;
+  * {
+    margin-left: 10px;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.email-input {
+  vertical-align: middle;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  // border: 1px solid gray;
+  // padding: 0 5px;
+  input, span {
+    font-size: 16px;
+    // border: none;
+    vertical-align: middle;
+    // margin-top: 10px;
+  }
+
+  .icon {
+    width: 20px;
+    vertical-align: middle;
+    // margin-top: 10px;
+  }
+}

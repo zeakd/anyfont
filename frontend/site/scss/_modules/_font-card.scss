@@ -1,0 +1,38 @@
+$font-card-gutter: 20px;
+
+.font-card {
+  a {
+    color: black;
+    text-decoration: none;
+    &:visited {
+      color: black;
+    }
+  }
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  height: 300px;
+
+  // gutter
+  &:nth-child(2n-1) {
+    padding-left: 0;
+  }
+  padding-left: $font-card-gutter;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  header {
+    h3 {
+      font-size: 2.0em;
+    }
+    margin-bottom: 10px;
+  }
+
+  &-preview {
+    width: 100%;
+    padding-top: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}

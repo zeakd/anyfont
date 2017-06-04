@@ -1,0 +1,36 @@
+{
+  "name": "anyfont",
+  "version": "1.0.0",
+  "description": "anyfont",
+  "main": "index.js",
+  "repository": "https://github.com/zeakd/anyfont",
+  "author": "zeakd <stuzeakd@kaist.ac.kr>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "clear-require": "^2.0.0",
+    "del": "^2.2.2",
+    "globby": "^6.1.0",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-nunjucks": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "merge-stream": "^1.0.1",
+    "node-sass": "^4.5.2",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
+    "through2": "^2.0.3"
+  },
+  "dependencies": {
+    "browserify": "^14.3.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sourcemaps": "^2.5.1",
+    "jquery": "^3.2.1",
+    "opentype.js": "^0.6.9",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
